@@ -184,6 +184,7 @@ PRODUCT_PACKAGES += \
     CupidSettings \
     CupidSettingsProvider \
     CupidSystemUI \
+    CupidSystemUIAOSPA \
     FrameworksResTarget \
     WifiResTarget
 
