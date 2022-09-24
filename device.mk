@@ -180,6 +180,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CupidFrameworks \
+    CupidSettingsProvider \
     CupidSystemUI \
     FrameworksResTarget \
     WifiResTarget
