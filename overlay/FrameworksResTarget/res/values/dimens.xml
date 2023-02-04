@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default paddings for content around the corners. -->
+    <dimen name="rounded_corner_content_padding">0dp</dimen>
+
+    <!-- Default radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">20dp</dimen>
+</resources>

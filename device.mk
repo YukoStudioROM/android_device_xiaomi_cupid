@@ -70,6 +70,11 @@ PRODUCT_PACKAGES += \
     init.xiaomi.rc \
     ueventd-odm.rc
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResTarget \
+    WifiResTarget
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
