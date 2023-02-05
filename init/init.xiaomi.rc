@@ -35,3 +35,25 @@ service qrtr-lookup /vendor/bin/qrtr-lookup
     group system
     disabled
     oneshot
+
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service_64
+    override
+    class hal
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct wakelock context_hub
+    capabilities BLOCK_SUSPEND
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh HighPerformance
+    socket audio_us_socket_0 seqpacket 0666 system system
+    onrestart restart audioserver
+
+service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors@2.1-service.multihal
+    override
+    class hal
+    user system
+    group system wakelock context_hub
+    task_profiles ServiceCapacityLow
+    socket audio_us_socket_1 seqpacket 0666 system system
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10
