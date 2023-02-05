@@ -61,6 +61,9 @@ function blob_fixup() {
         vendor/etc/camera/pureShot_parameter.xml | vendor/etc/camera/pureView_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
+        vendor/etc/init/hw/init.batterysecret.rc | vendor/etc/init/hw/init.mi_thermald.rc | vendor/etc/init/init.mfp-daemon.rc)
+            sed -i '/seclabel/d' "${2}"
+            ;;
     esac
 }
 
