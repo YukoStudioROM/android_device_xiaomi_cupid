@@ -50,3 +50,6 @@ persist.vendor.rcs.singlereg.feature=1
 
 # SoC
 ro.soc.manufacturer=QTI
+
+# Touch
+ro.vendor.touchfeature.type=183
