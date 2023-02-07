@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">Xiaomi/cupid_global/cupid:13/SKQ1.220303.001/V14.0.2.0.TLCMIXM:user/release-keys</string>
+</resources>
