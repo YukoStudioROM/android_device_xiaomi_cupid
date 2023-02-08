@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Default settings for gestures
+            0 - Disabled
+            1 - Wake device
+            2 - Toggle flashlight
+            3 - Toggle airplane mode
+            4 - Play/Pause music
+            5 - Next music
+            6 - Previous music
+            7 - Open camera
+            8 - Open dialer -->
+    <integer name="config_doubleTapDefault">1</integer>
+
+    <!-- Key codes of gestures. If the gesture is not supported set it to 0. -->
+    <integer name="config_doubleTapKeyCode">143</integer>
+
+    <!-- KeaHandler to intercept inputs on screen off. -->
+    <bool name="config_enableKeyHandler">true</bool>
+
     <!-- Fingerprint from stock ROM -->
     <string name="config_stockFingerprint" translatable="false">Xiaomi/cupid_global/cupid:13/SKQ1.220303.001/V14.0.2.0.TLCMIXM:user/release-keys</string>
 </resources>
