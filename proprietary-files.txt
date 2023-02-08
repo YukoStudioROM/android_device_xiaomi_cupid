@@ -1978,7 +1978,6 @@ vendor/etc/sensors/config/sx932x_0.json
 vendor/etc/sensors/config/sx933x_0.json
 vendor/etc/sensors/config/tcs3408.json
 vendor/etc/sensors/config/tmd3719.json
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensorDisplayMap.json
 vendor/etc/sensors/sns_reg_config
 
