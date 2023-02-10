@@ -59,6 +59,10 @@ TARGET_SCREEN_DENSITY := 440
 # DTB
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
+# HIDL
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest_taro.xml
+
 # Kernel
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
