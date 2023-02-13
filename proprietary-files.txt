@@ -1498,6 +1498,7 @@ vendor/lib64/libloadalgo_stub.so
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance_taro.xml
 vendor/etc/media_codecs_performance_taro_vendor.xml
+vendor/etc/media_codecs_system_default.xml
 vendor/etc/media_codecs_taro.xml
 vendor/etc/media_codecs_taro_vendor.xml
 vendor/etc/media_profiles.xml
