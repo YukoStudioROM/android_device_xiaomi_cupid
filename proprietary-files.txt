@@ -1350,11 +1350,16 @@ vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
+vendor/etc/apdr.conf
 vendor/etc/cacert_location.pem
 vendor/etc/init/loc-launcher.rc
 vendor/etc/init/vendor.wlan.lowirpcd.rc
+vendor/etc/izat.conf
+vendor/etc/lowi.conf
+vendor/etc/sap.conf
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/xtra_root_cert.pem
+vendor/etc/xtwifi.conf
 vendor/lib64/libasn1cper.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libasn1crtx.so
@@ -1395,13 +1400,6 @@ vendor/lib64/vendor.qti.gnss-service.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
-
-# GPS configs
-vendor/etc/apdr.conf
-vendor/etc/izat.conf
-vendor/etc/lowi.conf
-vendor/etc/sap.conf
-vendor/etc/xtwifi.conf
 
 # Graphics firmware
 vendor/firmware/a660_sqe.fw
