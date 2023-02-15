@@ -196,6 +196,10 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     WifiResTarget
 
+# Qualcomm XR
+PRODUCT_PACKAGES += \
+    libgrpc++_unsecure.vendor
+
 # Secure Element
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
