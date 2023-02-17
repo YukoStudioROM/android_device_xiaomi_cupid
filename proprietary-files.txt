@@ -147,6 +147,22 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
+# Audio (Dolby)
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/dolby/dax-default.xml
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdeccfg.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libstagefright_soft_ac4dec.so
+vendor/lib64/libstagefright_soft_ddpdec.so
+vendor/lib64/soundfx/libhwdap.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+
 # Audio AGM
 vendor/bin/agmcap
 vendor/bin/agmcompressplay
@@ -171,22 +187,6 @@ vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 vendor/etc/card-defs.xml
 vendor/etc/microphone_characteristics.xml
 vendor/etc/usecaseKvManager.xml
-
-# Audio (Dolby)
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/dolby/dax-default.xml
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libstagefright_soft_ac4dec.so
-vendor/lib64/libstagefright_soft_ddpdec.so
-vendor/lib64/soundfx/libhwdap.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # Audio EAI models
 vendor/etc/models/acd/event.eai
@@ -1139,9 +1139,6 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
-# Display Calibration
-vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.json
-
 # Display (Features)
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
@@ -1168,24 +1165,6 @@ vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
 vendor/lib64/libsdedrm.so
 vendor/lib64/libsdmcore.so
-
-# Display Postprocessing
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib64/libbacklight-calib.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdpps.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.color@1.4.so
-vendor/lib64/vendor.display.color@1.5.so
-vendor/lib64/vendor.display.color@1.6.so
-vendor/lib64/vendor.display.color@1.7.so
-vendor/lib64/vendor.display.postproc@1.0.so
 
 # Display (SDM)
 vendor/etc/display/DPU660.xml
@@ -1259,6 +1238,27 @@ vendor/lib64/libsre.so
 vendor/lib64/libtruetone.so
 vendor/lib64/libvideomode.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+
+# Display Calibration
+vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0a_mp_cmd_mode_dsc_dsi_panel.json
+
+# Display Postprocessing
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/ppd
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib64/libbacklight-calib.so
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libdpps.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.color@1.3.so
+vendor/lib64/vendor.display.color@1.4.so
+vendor/lib64/vendor.display.color@1.5.so
+vendor/lib64/vendor.display.color@1.6.so
+vendor/lib64/vendor.display.color@1.7.so
+vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
 vendor/bin/dpmQmiMgr
@@ -1494,20 +1494,6 @@ vendor/lib64/vendor.qti.hardware.limits@1.1.so
 vendor/bin/loadalgo
 vendor/lib64/libloadalgo_stub.so
 
-# Media configs
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/etc/media_codecs_performance_taro.xml
-vendor/etc/media_codecs_performance_taro_vendor.xml
-vendor/etc/media_codecs_system_default.xml
-vendor/etc/media_codecs_taro.xml
-vendor/etc/media_codecs_taro_vendor.xml
-vendor/etc/media_codecs_with_dolby_taro.xml
-vendor/etc/media_profiles.xml
-vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_taro.xml
-vendor/etc/media_taro/video_system_specs.json
-
 # Media (Dolby Vision)
 vendor/bin/hw/dolbycodec2
 vendor/etc/dolby_vision.cfg
@@ -1523,6 +1509,20 @@ vendor/lib64/libavservices_minijail_vendor.so
 vendor/lib64/libdolbyottcameracontrol.so
 vendor/lib64/libdolbyvision.so
 vendor/lib64/libstagefrightdolby.so
+
+# Media configs
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/etc/media_codecs_performance_taro.xml
+vendor/etc/media_codecs_performance_taro_vendor.xml
+vendor/etc/media_codecs_system_default.xml
+vendor/etc/media_codecs_taro.xml
+vendor/etc/media_codecs_taro_vendor.xml
+vendor/etc/media_codecs_with_dolby_taro.xml
+vendor/etc/media_profiles.xml
+vendor/etc/media_profiles_V1_0.xml
+vendor/etc/media_profiles_taro.xml
+vendor/etc/media_taro/video_system_specs.json
 
 # Memory
 vendor/lib64/libvmmem.so
@@ -2137,11 +2137,6 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# Touchscreen firmware
-vendor/firmware/st_fts_l3.ftb
-vendor/firmware/st_fts_l3_thp.ftb
-vendor/firmware/stm_fts_production_limits.csv
-
 # Touch (Xiaomi)
 vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
 vendor/etc/init.panel_info.sh
@@ -2149,6 +2144,11 @@ vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
 vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
+
+# Touchscreen firmware
+vendor/firmware/st_fts_l3.ftb
+vendor/firmware/st_fts_l3_thp.ftb
+vendor/firmware/stm_fts_production_limits.csv
 
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti
