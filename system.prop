@@ -1,3 +1,6 @@
+# Audio
+ro.audio.monitorRotation=true
+
 # Bluetooth
 bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
