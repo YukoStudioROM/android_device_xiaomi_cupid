@@ -1335,7 +1335,6 @@ vendor/lib64/libeva.so
 vendor/lib64/libeva_util.so
 
 # Fingerprint
-vendor/app/goodix_sz/goodix_sz.apk
 vendor/bin/hw/mfp-daemon
 vendor/bin/hw/vendor.xiaomi.hardware.dtool@1.0-service
 vendor/etc/init/init.mfp-daemon.rc
