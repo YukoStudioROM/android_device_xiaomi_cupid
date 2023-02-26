@@ -1192,6 +1192,7 @@ vendor/bin/displayfeature
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature@1.0-service.xml
 vendor/etc/df_default.xml
+vendor/etc/mdss_dsi_l3_42_02_0a_dsc_cmd_mi.xml
 vendor/etc/miLutInfo.txt
 vendor/etc/miLut_0.txt
 vendor/etc/miLut_1.txt
