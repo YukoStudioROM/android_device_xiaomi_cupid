@@ -142,4 +142,6 @@ WIFI_DRIVER_BUILT := qca_cld3
 WIFI_DRIVER_DEFAULT := qca_cld3
 WIFI_DRIVER_INSTALL_TO_KERNEL_OUT := true
 
+TARGET_WLAN_CHIP := qca6490
+
 include device/qcom/wlan/taro/BoardConfigWlan.mk
