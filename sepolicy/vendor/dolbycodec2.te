@@ -1,0 +1,4 @@
+type dolbycodec2, domain;
+type dolbycodec2_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(dolbycodec2)

@@ -1,0 +1,7 @@
+type hal_citsensorservice_hwservice, hwservice_manager_type;
+type hal_displayfeature_hwservice, hwservice_manager_type;
+type hal_dms_hwservice, hwservice_manager_type;
+type hal_micharge_hwservice, hwservice_manager_type;
+type hal_mlipay_hwservice, hwservice_manager_type;
+type hal_quickcamera_hwservice, hwservice_manager_type;
+type hal_touchfeature_hwservice, hwservice_manager_type;

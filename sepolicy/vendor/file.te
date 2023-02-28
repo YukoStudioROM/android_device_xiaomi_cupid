@@ -1,0 +1,9 @@
+# Devices
+type displayfeature_device, dev_type;
+type fingerprint_device, dev_type;
+type touchfeature_device, dev_type;
+
+# Files
+type audio_socket, file_type;
+type fingerprint_data_file, data_file_type, file_type;
+type thermal_data_file, data_file_type, file_type;

@@ -1,0 +1,8 @@
+type hal_citsensorservice_default, domain;
+type hal_citsensorservice_default_exec, exec_type, vendor_file_type, file_type;
+
+hal_server_domain(hal_citsensorservice_default, hal_citsensorservice)
+init_daemon_domain(hal_citsensorservice_default)
+hal_attribute_hwservice(hal_citsensorservice, hal_citsensorservice_hwservice)
+
+binder_call(hal_citsensorservice_client, hal_citsensorservice_server)

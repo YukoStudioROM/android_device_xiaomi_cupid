@@ -1,0 +1,8 @@
+type hal_micharge_default, domain;
+type hal_micharge_default_exec, exec_type, vendor_file_type, file_type;
+
+hal_server_domain(hal_micharge_default, hal_micharge)
+init_daemon_domain(hal_micharge_default)
+hal_attribute_hwservice(hal_micharge, hal_micharge_hwservice)
+
+binder_call(hal_micharge_client, hal_micharge_server)

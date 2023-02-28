@@ -1,0 +1,44 @@
+# Charger
+/vendor/bin/batterysecret                   u:object_r:batterysecret_exec:s0
+
+# Devices
+/dev/goodix_fp                              u:object_r:fingerprint_device:s0
+/dev/mi_display/disp_feature                u:object_r:displayfeature_device:s0
+/dev/xiaomi-touch                           u:object_r:touchfeature_device:s0
+
+# Display
+/vendor/bin/displayfeature                  u:object_r:displayfeature_exec:s0
+
+# Dolby
+/vendor/bin/hw/dolbycodec2                  u:object_r:dolbycodec2_exec:s0
+
+# Fingerprint
+/data/vendor/fpc(/.*)?                      u:object_r:fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                   u:object_r:fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?                   u:object_r:fingerprint_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?               u:object_r:fingerprint_data_file:s0
+/mnt/vendor/persist/goodix(/.*)?            u:object_r:fingerprint_data_file:s0
+/vendor/bin/hw/mfp-daemon                   u:object_r:vendor_mfp-daemon_exec:s0
+
+# HALs
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi  u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                        u:object_r:hal_dms_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service            u:object_r:hal_displayfeature_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.micharge@1\.0-service                  u:object_r:hal_micharge_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.quickcamera@1\.0-service               u:object_r:hal_quickcamera_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hw\.touchfeature@1\.0-service                    u:object_r:hal_touchfeature_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.sensor\.citsensorservice@2\.0-service            u:object_r:hal_citsensorservice_default_exec:s0
+
+# Radio
+/vendor/bin/qrtr-lookup                     u:object_r:vendor_qrtr_exec:s0
+
+# Sockets
+/dev/socket/audio_us_socket_[0-1]           u:object_r:audio_socket:s0
+
+# Thermal
+/data/vendor/thermal(/.*)?                  u:object_r:thermal_data_file:s0
+/vendor/bin/mi_thermald                     u:object_r:mi_thermald_exec:s0
+
+# WiFi
+/data/vendor/mac_addr(/.*)?                 u:object_r:vendor_wifi_vendor_data_file:s0
+/vendor/bin/nv_mac                          u:object_r:vendor_wcnss_service_exec:s0
