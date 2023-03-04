@@ -43,6 +43,8 @@ vendor.gatekeeper.disable_spu=true
 ro.incremental.enable=yes
 
 # Media
+debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec=4
 ro.mediaserver.64b.enable=true
 
 # RCS
