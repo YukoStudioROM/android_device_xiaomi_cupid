@@ -61,7 +61,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     gps \
     init \
-    media \
     overlay \
     perf \
     telephony \
@@ -163,6 +162,28 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
     libkeymaster_messages.vendor
+
+# Media
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_soft_common.vendor \
+    libcodec2_vndk.vendor \
+    libgui_vendor \
+    libmm-omxcore \
+    libOmxCore \
+    libplatformconfig \
+    libstagefright_softomx.vendor \
+    libstagefrighthw
 
 # Neural Networks
 PRODUCT_PACKAGES += \
